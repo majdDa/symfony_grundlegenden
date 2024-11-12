@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   |<h1>hello World</h1>
+    <ul> 
+       {%for item in list%}
+         {% if item < x %}
+             <li> {{item}}</li>
+         {%endif%}
+       {%endfor%}
+    </ul>
+
+
+
+  |<h2>Names:</h2>
+    <ul> 
+       {%for item in users%}
+             <li> {{item.name}}</li>
+       {%endfor%}
+    </ul>
+
+   <h2>Ages:</h2>
+    <ul> 
+       {%for item in users%}
+             <li> {{item.age}}</li>
+       {%endfor%}
+    </ul>
+       <h2>Profession:</h2>
+    <ul> 
+       {%for item in users%}
+             <li> {{item.profession}}</li>
+       {%endfor%}
+    </ul>
+
+</body>
+</html>

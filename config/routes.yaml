@@ -1,5 +1,18 @@
+# Existing configuration to load routes from controller attributes
+
 controllers:
     resource:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+# Adding new explicit routes
+main2:
+    path: /main2
+    controller: App\Controller\Main2Controller::index
+
+add:
+    path: /addData2
+    controller: App\Controller\Main2Controller::save2
+
+
